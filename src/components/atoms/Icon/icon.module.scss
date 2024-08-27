@@ -1,0 +1,12 @@
+.icon {
+    display: inline-block;
+    font-family: 'IconFont';
+    line-height: 1;
+  }
+  .icon-home::before {
+    content: '\f015';
+  }
+  
+  .icon-user::before {
+    content: '\f007';
+  }

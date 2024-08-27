@@ -1,0 +1,28 @@
+/* Estilos para el componente FormGroup */
+
+.form-group {
+    margin-bottom: 20px;
+
+    &__label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+    }
+
+    &__error {
+        color: red;
+        margin-top: 5px;
+    }
+}

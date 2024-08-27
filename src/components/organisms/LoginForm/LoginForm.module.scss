@@ -1,0 +1,74 @@
+@import "../../../styles/variables.scss";
+
+.loginForm {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.loginForm :global(.form-group) {
+    margin-bottom: 15px;
+}
+
+.loginForm :global(.button) {
+    margin-top: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    input {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+  
+      &:focus {
+        border-color: $primary-active-color;
+        outline: none;
+        box-shadow: 0 0 0 2px $primary-shadow-color;
+      }
+    }
+  
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    
+    .inputError {
+      border: 1px solid $error-color;
+      animation: moveInputError 0.5s;
+    }
+    
+    .error {
+      color: $error-color;
+      font-size: 0.875rem;
+      margin-top: 5px;
+    }
+  }
+
+
+
+@keyframes moveInputError {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+    
+}

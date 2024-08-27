@@ -1,0 +1,20 @@
+.stars {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #d3d3d3;
+  .description {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: #333;
+    margin-top: 6px;
+  }
+  .star {
+    margin-right: 0.1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .filled {
+    color: #ffcc00;
+  }
+}

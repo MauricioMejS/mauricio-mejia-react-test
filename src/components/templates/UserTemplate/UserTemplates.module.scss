@@ -1,0 +1,27 @@
+.authTemplate {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.authTemplateBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.authTemplateContent {
+    position: relative;
+    width: 400px;
+    min-width: 270px;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
