@@ -23,7 +23,7 @@ const schema = yup.object().shape({
     image: yup
         .mixed()
         .required('The image is required')
-        .test('fileType', 'The file must be an image', (value) => {
+        .test('fileType', 'The file must be an image', (value: any) => {
             return value && value[0] && ['image/jpeg', 'image/png', 'image/gif'].includes(value[0].type);
         }),
 });

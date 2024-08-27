@@ -23,7 +23,6 @@ const Login = () => {
       data.password === initSessionData.password
     ) {
       saveSession("mySecretKey", data);
-
       data.email = "";
       data.password = "";
     } else {

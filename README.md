@@ -101,6 +101,6 @@ Para servir la versión optimizada en producción, ejecuta:
 ## Final
 Si tienes alguna pregunta o necesitas más información, por favor, no dudes en ponerte en contacto conmigo.
 
-Planeado por implementar:
+Planeado por implementar(no implementado por tiempo):
 - Animaciones
 - Separación del cosumo de api
