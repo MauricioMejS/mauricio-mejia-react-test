@@ -47,7 +47,7 @@ return (
 
             <div className={styles.inputContainer}>
                 <label>Price</label>
-                <input type="number" typeof="number" {...register("price")} placeholder={product ? product.price : "Price"} />
+                <input type="number" typeof="number" {...register("price")} placeholder={product ? String(product.price) : "Price"} />
                 {errors.price && <p className={styles.error}>{errors.price.message}</p>}
             </div>
 
