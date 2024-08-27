@@ -52,7 +52,7 @@ const ProductsPage: React.FC<ProductsPageProps> = () => {
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  const sortedProducts = [...filteredProducts].sort((a, b) => {
+  const sortedProducts = [...filteredProducts].sort((a: any, b: any) => {
     if (!sortedColumn) return 0;
     const valueA = a[sortedColumn];
     const valueB = b[sortedColumn];
