@@ -20,6 +20,7 @@ interface ProductTemplateProps {
             rate: number;
             count: number;
         } | null;
+        category: string;
     };
 }
 
